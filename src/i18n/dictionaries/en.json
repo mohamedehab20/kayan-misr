@@ -15,7 +15,7 @@
     "items": [
       { "label": "Home", "href": "" },
       { "label": "About the Party", "href": "/about" },
-      { "label": "Our Initiatives", "href": "/initiatives" },
+      { "label": "Manfaa", "href": "/initiatives" },
       { "label": "Constitutional Thought", "href": "/constitution" },
       { "label": "Political Science Institute", "href": "/institute" },
       { "label": "National Dialogue", "href": "/national-dialogue" },
@@ -298,7 +298,7 @@
     "entertainment": { "title": "Entertainment", "subtitle": "Recreational, sports, and cultural activities that bring members together and build team spirit." },
     "research": { "title": "Research & Studies", "subtitle": "Opinion pieces, policy papers, and strategic studies by leading researchers and members." },
     "contact": { "title": "Contact", "subtitle": "We welcome your questions, proposals, and membership applications." },
-    "initiatives": { "title": "Our Initiatives", "subtitle": "Community initiatives that turn members' time and expertise into a public service for every citizen." },
+    "initiatives": { "title": "Manfaa", "subtitle": "Everyone has something to offer" },
     "login": { "title": "Members Portal", "subtitle": "Sign in to follow your membership and requests." },
     "signup": { "title": "Create a member account", "subtitle": "Join Kayan Misr and follow your membership and requests in one place." },
     "account": { "title": "My account", "subtitle": "Your membership details and the requests you've sent." }
@@ -393,9 +393,9 @@
     }
   },
   "initiatives": {
-    "eyebrow": "Community service",
-    "title": "Four initiatives in service of citizens",
-    "subtitle": "Our members' time and skills are real wealth, so we designed initiatives that put them to work for those who need them.",
+    "eyebrow": "The Manfaa system",
+    "title": "Everyone has something to offer",
+    "subtitle": "A system that brings together people, expertise, and services, turning individual abilities into mutual benefit.",
     "labels": {
       "idea": "The idea",
       "value": "The value",

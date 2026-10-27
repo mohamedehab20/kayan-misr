@@ -660,6 +660,157 @@
       "note": "The constitution (Article 180) provides for elected local councils; none have been elected since they were dissolved in 2011."
     }
   },
+  "simulations": {
+    "eyebrow": "Learning by doing",
+    "title": "Simulation models",
+    "subtitle": "Participants step into the roles of real officials and run realistic sessions under the constitution and the governing laws.",
+    "labels": {
+      "roles": "Roles",
+      "stages": "Session stages",
+      "skills": "Skills gained",
+      "reference": "Constitutional basis",
+      "register": "Register for this model"
+    },
+    "models": [
+      {
+        "id": "government",
+        "icon": "landmark",
+        "title": "Government simulation",
+        "subtitle": "The Cabinet",
+        "about": "Participants run a cabinet meeting on a public issue or crisis and come out with actionable decisions and policies.",
+        "roles": [
+          "Prime Minister",
+          "Ministers",
+          "Government spokesperson",
+          "Cabinet General Secretariat"
+        ],
+        "stages": [
+          "Presenting the issue or crisis to the cabinet",
+          "Each minister prepares a policy paper for their sector",
+          "Cabinet meeting and discussion",
+          "Deciding, assigning responsibilities and budget",
+          "Government statement and press conference"
+        ],
+        "skills": [
+          "Decision making",
+          "Crisis management",
+          "Planning and budgeting",
+          "Government communication"
+        ],
+        "reference": "Egyptian Constitution: Articles 163 – 174 (The Government)"
+      },
+      {
+        "id": "house",
+        "icon": "users",
+        "title": "House of Representatives simulation",
+        "subtitle": "The legislature",
+        "about": "Participants act as MPs in lawmaking and oversight: from tabling a bill to voting on it, plus using oversight tools.",
+        "roles": [
+          "Speaker and two deputies",
+          "Committee chairs",
+          "Party parliamentary groups",
+          "MPs",
+          "General Secretariat"
+        ],
+        "stages": [
+          "Tabling a government bill or a member's bill",
+          "Discussion in the competent committee",
+          "Preparing the committee report",
+          "Plenary debate and vote",
+          "Oversight session: questions, briefing requests and interpellations"
+        ],
+        "skills": [
+          "Legislative drafting",
+          "Debate and persuasion",
+          "Parliamentary oversight tools",
+          "Committee work"
+        ],
+        "reference": "Egyptian Constitution: Articles 101 – 138 (House of Representatives)"
+      },
+      {
+        "id": "senate",
+        "icon": "scale",
+        "title": "Senate simulation",
+        "subtitle": "Formerly the Shura Council",
+        "about": "Participants study matters referred to the Senate and give its opinion, such as laws complementing the constitution and the development plan.",
+        "roles": [
+          "Speaker and two deputies",
+          "Committee chairs",
+          "Elected members",
+          "Appointed members"
+        ],
+        "stages": [
+          "Referral of the matter to the Senate",
+          "Study in the competent committee with expert hearings",
+          "Preparing a report with opinion and proposals",
+          "Plenary discussion of the report",
+          "Sending the Senate's opinion to the President or the House"
+        ],
+        "skills": [
+          "Strategic thinking",
+          "Writing studies and opinion papers",
+          "Analyzing legislation",
+          "Building consensus"
+        ],
+        "reference": "Egyptian Constitution: Articles 248 – 254 (The Senate)"
+      },
+      {
+        "id": "governor",
+        "icon": "pin",
+        "title": "Governor simulation",
+        "subtitle": "The governorate executive council",
+        "about": "Participants run a virtual governorate: receiving citizens' complaints, chairing the executive council and handling a service crisis.",
+        "roles": [
+          "Governor",
+          "Deputy governor",
+          "Secretary-general",
+          "Service directorate heads",
+          "Heads of districts and cities"
+        ],
+        "stages": [
+          "Reviewing citizens' complaints or a service crisis (water, roads, building violations)",
+          "Executive council meeting and assigning responsibilities",
+          "Drafting an action plan with a timeline and budget",
+          "A virtual field follow-up visit",
+          "The governor's report on results"
+        ],
+        "skills": [
+          "Local administration",
+          "Problem solving",
+          "Inter-agency coordination",
+          "Serving citizens"
+        ],
+        "reference": "Egyptian Constitution: Articles 175 – 183 (Local Administration) — Local Administration Law No. 43 of 1979"
+      },
+      {
+        "id": "local-council",
+        "icon": "handshake",
+        "title": "Local popular council simulation",
+        "subtitle": "Popular oversight of local government",
+        "about": "Participants form an elected local council that follows the development plan in its area and oversees executive bodies with real oversight tools.",
+        "roles": [
+          "Council chair",
+          "Deputy chair",
+          "Members (a quarter youth, a quarter women, at least half workers and farmers)",
+          "Head of the local unit"
+        ],
+        "stages": [
+          "Discussing the local development plan and budget",
+          "Submitting proposals, questions and briefing requests",
+          "Interpellating the head of the local unit",
+          "Voting on recommendations or a no-confidence motion",
+          "Following up on implementation"
+        ],
+        "skills": [
+          "Community participation",
+          "Local oversight",
+          "Representing a constituency",
+          "Budget preparation"
+        ],
+        "reference": "Egyptian Constitution: Article 180 (Elected local councils)"
+      }
+    ]
+  },
   "footer": {
     "about": "A national intellectual and political institution that strengthens constitutional culture, enriches political science, and empowers young academic and legislative talent in service of the state and the New Republic.",
     "badge": "An integrated Egyptian youth platform",

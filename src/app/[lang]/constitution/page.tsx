@@ -1,5 +1,6 @@
 import { Pillars } from "@/components/home/pillars";
 import { PageHeader } from "@/components/page-header";
+import { Simulations } from "@/components/simulations";
 import { loadPage, pageMetadata } from "@/i18n/load-page";
 
 export function generateMetadata({ params }: PageProps<"/[lang]/constitution">) {
@@ -12,6 +13,7 @@ export default async function ConstitutionPage({ params }: PageProps<"/[lang]/co
     <>
       <PageHeader lang={lang} home={dict.nav.items[0].label} {...dict.pages.constitution} />
       <Pillars t={dict.home.pillars} />
+      <Simulations lang={lang} t={dict.simulations} />
     </>
   );
 }

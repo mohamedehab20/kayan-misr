@@ -325,7 +325,27 @@
       "exists": "This email is already registered. Sign in instead.",
       "weakPassword": "That password is too weak. Use at least 8 characters.",
       "config": "The members portal isn't enabled yet.",
+      "guestDisabled": "Guest access isn't available right now. Create an account or send your request from the contact page.",
       "server": "Something unexpected happened. Please try again."
+    },
+    "guest": {
+      "or": "or",
+      "button": "Continue as guest",
+      "hint": "Browse, send requests, and follow them without creating an account.",
+      "badge": "Guest",
+      "title": "You're browsing as a guest",
+      "text": "Your requests are saved in this session on this device only. Complete your registration to become a member and keep them for good.",
+      "upgradeTitle": "Complete your registration",
+      "upgrade": "Complete registration",
+      "checkEmail": "We sent a confirmation link to your email. Open it and you'll come back to your account to set a password.",
+      "logout": "End guest session",
+      "logoutWarning": "After ending the session you won't be able to see your requests here."
+    },
+    "setPassword": {
+      "title": "Set your password",
+      "text": "Your email is confirmed. Set a password so you can sign in later from any device.",
+      "button": "Save password",
+      "success": "Password saved. You're now a registered member."
     },
     "account": {
       "welcome": "Welcome,",

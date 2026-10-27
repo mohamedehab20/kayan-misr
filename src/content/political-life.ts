@@ -86,7 +86,7 @@ export const ministries: Ministry[] = [
 // House of Representatives after the 2025 elections (results announced January 2026). 596 seats in total.
 export const houseTotal = 596;
 export const parties = [
-  { name: { ar: "مستقبل وطن", en: "Nation's Future" }, founded: "2014", seats: 231, about: { ar: "حزب الأغلبية في البرلمان منذ 2015.", en: "The majority party in parliament since 2015." } },
+  { name: { ar: "مستقبل وطن", en: "Nation's Future" }, founded: "2014", seats: 231, about: { ar: "حزب الأغلبية في البرلمان منذ انتخابات 2020.", en: "The majority party in parliament since the 2020 elections." } },
   { name: { ar: "حماة الوطن", en: "Homeland Defenders" }, founded: "2013", seats: 91, about: { ar: "تأسس بعد 2013، وصار ثاني أكبر كتلة برلمانية.", en: "Founded after 2013; now the second-largest bloc." } },
   { name: { ar: "الجبهة الوطنية", en: "National Front" }, founded: "2024", seats: 70, about: { ar: "تأسس في ديسمبر 2024 ويرأسه عاصم الجزار، وخاض الانتخابات لأول مرة في 2025.", en: "Founded December 2024, chaired by Assem El-Gazzar; first election in 2025." } },
   { name: { ar: "الشعب الجمهوري", en: "Republican People's" }, founded: "2012", seats: 28, about: { ar: "حزب ليبرالي تأسس بعد ثورة يناير.", en: "A liberal party founded after the January revolution." } },

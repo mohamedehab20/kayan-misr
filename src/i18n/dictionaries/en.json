@@ -22,6 +22,7 @@
       { "label": "Events", "href": "/events" },
       { "label": "Political Life", "href": "/political-life" },
       { "label": "Entertainment", "href": "/entertainment" },
+      { "label": "Barrier-Free Party", "href": "/barrier-free" },
       { "label": "Research & Studies", "href": "/research" },
       { "label": "Contact", "href": "/contact" }
     ],
@@ -291,6 +292,7 @@
     }
   },
   "pages": {
+    "barrierFree": { "title": "A Barrier-Free Party", "subtitle": "A space for people with disabilities: your rights, our programs, and your full participation in political life." },
     "politicalLife": { "title": "Political Life", "subtitle": "A simple guide to Egypt's state institutions: the presidency, government, parties, civil society and governorates." },
     "about": { "title": "About the Party", "subtitle": "Learn about Kayan Misr's origins, vision, and the principles behind its national work." },
     "constitution": { "title": "Constitutional Thought", "subtitle": "A complete reference for understanding the Egyptian Constitution, legislation, and parliamentary analysis." },

@@ -1,9 +1,11 @@
 import {
+  Accessibility,
   BookImage,
   Briefcase,
   Clapperboard,
   Compass,
   Drama,
+  Ear,
   FileText,
   Eye,
   Gamepad2,
@@ -29,6 +31,7 @@ import {
   Trophy,
   Users,
   Video,
+  Vote,
   type LucideIcon,
 } from "lucide-react";
 
@@ -63,6 +66,9 @@ const icons: Record<string, LucideIcon> = {
   video: Video,
   monitorPlay: MonitorPlay,
   puzzle: Puzzle,
+  accessibility: Accessibility,
+  ear: Ear,
+  vote: Vote,
 };
 
 export const getIcon = (key: string) => icons[key] ?? Sparkles;

@@ -72,6 +72,24 @@ body {
   }
 }
 
+/* High contrast mode, toggled from the Barrier-Free page tools */
+html.high-contrast {
+  --foreground: #000000;
+  --muted: #1a2133;
+  --line: #101b30;
+  --gold: #5a3f00;
+  --gold-bright: #8a6400;
+}
+
+html.high-contrast main a {
+  text-decoration: underline;
+}
+
+html.high-contrast *:focus-visible {
+  outline: 3px solid #c8102e;
+  outline-offset: 2px;
+}
+
 details > summary::-webkit-details-marker {
   display: none;
 }

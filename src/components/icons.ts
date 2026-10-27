@@ -1,0 +1,46 @@
+import {
+  Compass,
+  FileText,
+  Eye,
+  Gamepad2,
+  GraduationCap,
+  Handshake,
+  Landmark,
+  Mail,
+  MapPin,
+  Mic,
+  Newspaper,
+  Palette,
+  Phone,
+  Scale,
+  Sparkles,
+  Tent,
+  TrendingUp,
+  Trophy,
+  Users,
+  type LucideIcon,
+} from "lucide-react";
+
+// Content files reference icons by these keys
+const icons: Record<string, LucideIcon> = {
+  scale: Scale,
+  eye: Eye,
+  landmark: Landmark,
+  fileText: FileText,
+  mic: Mic,
+  users: Users,
+  newspaper: Newspaper,
+  graduation: GraduationCap,
+  phone: Phone,
+  mail: Mail,
+  pin: MapPin,
+  trending: TrendingUp,
+  compass: Compass,
+  trophy: Trophy,
+  palette: Palette,
+  tent: Tent,
+  gamepad: Gamepad2,
+  handshake: Handshake,
+};
+
+export const getIcon = (key: string) => icons[key] ?? Sparkles;

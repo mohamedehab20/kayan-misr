@@ -1,0 +1,350 @@
+{
+  "meta": {
+    "title": "Kayan Misr Party",
+    "tagline": "A beacon for political science and constitutional culture",
+    "description": "Kayan Misr Party — a national youth platform for parliamentary practice, constitutional culture, and political leadership."
+  },
+  "topbar": {
+    "badge": "Latest",
+    "text": "The Kayan Misr Academy launches its new training season for local council and youth leadership cadres",
+    "search": "Search the legislative platform"
+  },
+  "nav": {
+    "switchLanguage": "العربية",
+    "openMenu": "Open menu",
+    "items": [
+      { "label": "Home", "href": "" },
+      { "label": "About the Party", "href": "/about" },
+      { "label": "Constitutional Thought", "href": "/constitution" },
+      { "label": "Political Science Institute", "href": "/institute" },
+      { "label": "National Dialogue", "href": "/national-dialogue" },
+      { "label": "Events", "href": "/events" },
+      { "label": "Entertainment", "href": "/entertainment" },
+      { "label": "Research & Studies", "href": "/research" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "members": "Members Portal",
+    "join": "Join Kayan"
+  },
+  "ticker": {
+    "label": "Updates",
+    "items": [
+      "An expanded workshop discusses proposed amendments to the Local Administration Law with youth from all governorates",
+      "Launch of the third cohort of the Egyptian Parliament Simulation for university students",
+      "Kayan Misr Academy opens registration for the Constitutional Education program",
+      "A consultative session on youth priorities in the National Dialogue"
+    ]
+  },
+  "home": {
+    "hero": {
+      "badge": "A beacon of constitutional thought and political awareness for youth",
+      "titleStart": "Strengthening parliamentary practice,",
+      "titleHighlight": "and constitutional culture",
+      "titleEnd": "in service of the New Republic",
+      "text": "Kayan Misr is a leading platform that promotes parliamentary culture and legislative tools, and prepares young academic and political talent in line with Egypt Vision 2030, in steady support of national strategic decisions.",
+      "searchPlaceholder": "Search constitutional articles, legislation, or position papers...",
+      "searchButton": "Constitutional query",
+      "primaryCta": "Explore the constitutional portal",
+      "secondaryCta": "Political Science Academy",
+      "card": {
+        "eyebrow": "Leadership center & youth vision",
+        "title": "Kayan Shabab Misr — We're with you",
+        "text": "Founded in 2018 alongside presidential recommendations to empower youth, strengthen national participation, and unite Egyptian youth.",
+        "stats": [
+          { "value": "2018", "label": "Founded" },
+          { "value": "27", "label": "Governorates" }
+        ],
+        "link": "Read the founding charter and program"
+      }
+    },
+    "pillars": {
+      "eyebrow": "Center for State and Law",
+      "title": "Pillars of political science and the constitution",
+      "subtitle": "An integrated training and academic structure that keeps pace with the Egyptian state's milestones and provides tools for in-depth parliamentary analysis.",
+      "items": [
+        {
+          "icon": "scale",
+          "eyebrow": "Legal reference",
+          "title": "Constitution & legislation encyclopedia",
+          "text": "A comprehensive digital database of the Egyptian Constitution and its amendments, with commentary and Supreme Constitutional Court rulings.",
+          "link": "Browse articles and rulings"
+        },
+        {
+          "icon": "eye",
+          "eyebrow": "Oversight & policy",
+          "title": "Public policy & legislation observatory",
+          "text": "Close tracking of draft laws and the agendas of both houses of parliament, with assessments of their legislative and social impact.",
+          "link": "View updates"
+        },
+        {
+          "icon": "landmark",
+          "eyebrow": "Hands-on practice",
+          "title": "Parliament & government simulations",
+          "text": "Realistic simulation programs where youth practice parliamentary and government roles, draft oversight tools, and run sessions.",
+          "link": "Register for simulations"
+        },
+        {
+          "icon": "fileText",
+          "eyebrow": "Intellectual output",
+          "title": "Research & position paper bank",
+          "text": "An archive of policy papers and peer-reviewed studies that support decision makers, produced by the party's specialized committees.",
+          "link": "Download publications"
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Party and youth work",
+      "title": "About Kayan Misr Party..",
+      "subtitle": "A national vision to empower talent and support the state",
+      "text": "Kayan Shabab Misr is a youth political institution founded in 2018, inspired by the National Youth Conferences and the political leadership's call to develop Egyptian political life. It brings together academic and professional youth to offer a different public-service experience that unites young people, raises constitutional awareness, and genuinely prepares them for decision making.",
+      "points": [
+        { "title": "Supporting the pillars of the Egyptian state:", "text": "backing the political leadership's strategic decisions through awareness committees and ongoing studies." },
+        { "title": "Legislative and oversight training:", "text": "preparing a generation that believes in the rule of law and the constitution, ready for parliamentary and local council elections." }
+      ],
+      "video": {
+        "badge": "First National Conference",
+        "title": "Behind the scenes — the annual constitutional forum",
+        "subtitle": "Part of the launch of Shabab Misr 2024 events",
+        "caption": "Secretary-General's address"
+      },
+      "primaryCta": "More about our vision and principles",
+      "secondaryCta": "Watch us on YouTube"
+    },
+    "articles": {
+      "eyebrow": "Rigorous thought and analysis",
+      "title": "Opinion & strategic studies",
+      "subtitle": "The latest analytical readings by academics, researchers, and members on national issues.",
+      "all": "All",
+      "categories": ["Constitutional studies", "Public policy & security", "Economy & development", "Identity & citizenship"],
+      "read": "Read article",
+      "cta": "See all opinion pieces and studies (200+ papers)",
+      "items": [
+        {
+          "category": 2,
+          "date": "2024/10/22",
+          "title": "Egypt's energy journey: from the High Dam to clean energy horizons",
+          "excerpt": "A strategic review of Egypt's energy sector transitions and the role of renewables in economic independence.",
+          "author": "Prof. Ahmed Mostafa Ali",
+          "role": "Professor of political economy"
+        },
+        {
+          "category": 1,
+          "date": "2024/10/20",
+          "title": "Youth diplomacy: soft power for cultural dialogue and bridge building",
+          "excerpt": "How young talent can convey Egypt's civilizational image and strengthen its regional and international presence.",
+          "author": "Youssef Mohamed Abdelaty",
+          "role": "Foreign relations committee"
+        },
+        {
+          "category": 3,
+          "date": "2024/10/18",
+          "title": "A unified digital identity for citizens: ending bureaucracy",
+          "excerpt": "A legislative proposal for a unified digital platform for government services that cuts procedures and adds transparency.",
+          "author": "Dr. Sara Abdelrahman",
+          "role": "Digital transformation researcher"
+        },
+        {
+          "category": 0,
+          "date": "2024/10/15",
+          "title": "From awareness to text: human development in constitutional philosophy",
+          "excerpt": "A reading of citizenship and human development as established by the Egyptian Constitution.",
+          "author": "Mohamed Salah Hussein",
+          "role": "Constitutional law researcher"
+        }
+      ]
+    },
+    "academy": {
+      "eyebrow": "Future leaders",
+      "title": "Kayan Misr Academy for Training & Political Science",
+      "subtitle": "Qualifying programs and professional certificates that give national cadres the knowledge and practical skills for public and parliamentary work.",
+      "guide": "Accredited training programs guide",
+      "occupancy": "Cohort occupancy",
+      "apply": "Apply to this cohort",
+      "items": [
+        {
+          "tag": "Professional diploma",
+          "title": "Preparing local council cadres",
+          "text": "Preparing youth to run in local elections through decentralization, local budgeting, and accountability.",
+          "progress": 80
+        },
+        {
+          "tag": "Advanced program",
+          "title": "Drafting bills and oversight tools",
+          "text": "Equipping researchers with legislative drafting skills and parliamentary questions and briefing requests.",
+          "progress": 42
+        },
+        {
+          "tag": "International simulation",
+          "title": "Arab Summit & UN Security Council simulation",
+          "text": "Interactive practice in diplomacy, regional crisis management, and drafting joint international resolutions.",
+          "progress": 78
+        },
+        {
+          "tag": "Accredited certificate",
+          "title": "Constitutional education & human rights",
+          "text": "A full program on constitutional rights and freedoms and the national human rights strategy.",
+          "progress": 100
+        }
+      ]
+    },
+    "events": {
+      "eyebrow": "Youth engagement across Egypt",
+      "title": "Events & consultative sessions",
+      "subtitle": "Constructive dialogues and live seminars bringing parliamentary leaders together with youth in every governorate.",
+      "all": "Browse all past and current events",
+      "items": [
+        {
+          "badge": "Upcoming",
+          "live": true,
+          "date": "2024/11/16",
+          "place": "Cairo",
+          "title": "Youth cadres and local councils",
+          "text": "An expanded dialogue with members of parliament on the role of youth in upcoming local councils.",
+          "cta": "Register now",
+          "primary": true
+        },
+        {
+          "badge": "Past event",
+          "live": false,
+          "date": "2024/03/24",
+          "place": "Cairo",
+          "title": "Annual Ramadan Suhoor — Kayan Misr Party",
+          "text": "The annual Ramadan gathering with party leaders and public figures, honoring outstanding members.",
+          "cta": "Official invitation details",
+          "primary": false
+        },
+        {
+          "badge": "Ceremony",
+          "live": false,
+          "date": "2024/02/12",
+          "place": "Cairo Opera House",
+          "title": "Behind the scenes of the annual honors ceremony",
+          "text": "The annual ceremony honoring outstanding youth and announcing the new year's action plan.",
+          "cta": "Watch the event recap",
+          "primary": false
+        }
+      ]
+    },
+    "stats": {
+      "title": "Field statistics & achievements",
+      "subtitle": "Real numbers that reflect Kayan Misr's reach and mission across the republic.",
+      "items": [
+        { "icon": "mic", "value": "40+", "label": "Major events", "text": "Conferences, seminars, and parliamentary hearings" },
+        { "icon": "users", "value": "26,312", "label": "Active members", "text": "Registered, politically trained youth cadres" },
+        { "icon": "newspaper", "value": "250+", "label": "Articles & studies", "text": "Knowledge output on constitutional and political affairs" },
+        { "icon": "graduation", "value": "50+", "label": "Training courses", "text": "Leadership and parliamentary preparation programs" }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Clear, complete answers",
+      "title": "Frequently asked questions about Kayan and membership",
+      "subtitle": "Everything you want to know about joining, activities, and opportunities.",
+      "more": "Browse all FAQs in detail",
+      "items": [
+        { "q": "Who are we, and what is Kayan Misr?", "a": "Kayan Misr is a national youth party founded in 2018 that spreads constitutional culture and prepares young cadres for public and parliamentary work." },
+        { "q": "What is Kayan's strategic goal?", "a": "To build an aware generation able to take an active part in political life and support state institutions in line with Egypt Vision 2030." },
+        { "q": "What are the official membership requirements?", "a": "Applicants must be Egyptian citizens in full possession of their civil rights and committed to Kayan's principles and bylaws." },
+        { "q": "How do registration and selection work?", "a": "Apply through the online membership form; the membership committee then contacts you for an introductory interview." },
+        { "q": "What volunteer and research opportunities are available?", "a": "Members can join specialized committees, research teams, event organization, and simulation and training programs." }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Institutional contact",
+      "title": "Contact the political council",
+      "text": "Feel free to write to the general secretariat to share your legislative ideas and proposals, or to ask about academy programs.",
+      "channels": [
+        { "icon": "phone", "label": "Official WhatsApp", "value": "+20 100 000 0000" },
+        { "icon": "mail", "label": "Official email", "value": "info@kayanmisr.org" },
+        { "icon": "pin", "label": "Secretariat headquarters", "value": "Cairo, Arab Republic of Egypt" }
+      ],
+      "form": {
+        "name": "Full name",
+        "namePlaceholder": "Enter your full name",
+        "email": "Email",
+        "emailPlaceholder": "example@email.com",
+        "phone": "Mobile number",
+        "phonePlaceholder": "01XXXXXXXXX",
+        "type": "Inquiry type",
+        "types": ["Membership application", "Academy programs inquiry", "Legislative or research proposal", "Other"],
+        "message": "Message or proposal",
+        "messagePlaceholder": "Write the details of your inquiry or proposal here...",
+        "submit": "Send to the secretariat",
+        "privacy": "Your data is protected and encrypted",
+        "success": "Your message was received. The secretariat team will contact you soon."
+      }
+    }
+  },
+  "pages": {
+    "about": { "title": "About the Party", "subtitle": "Learn about Kayan Misr's origins, vision, and the principles behind its national work." },
+    "constitution": { "title": "Constitutional Thought", "subtitle": "A complete reference for understanding the Egyptian Constitution, legislation, and parliamentary analysis." },
+    "institute": { "title": "Political Science Institute", "subtitle": "Qualifying programs and professional certificates that prepare young leaders for public and parliamentary work." },
+    "dialogue": { "title": "National Dialogue", "subtitle": "A space for youth to share their views and proposals on national issues within the National Dialogue." },
+    "events": { "title": "Events", "subtitle": "Conferences, seminars, and consultative sessions organized by Kayan across all governorates." },
+    "entertainment": { "title": "Entertainment", "subtitle": "Recreational, sports, and cultural activities that bring members together and build team spirit." },
+    "research": { "title": "Research & Studies", "subtitle": "Opinion pieces, policy papers, and strategic studies by leading researchers and members." },
+    "contact": { "title": "Contact", "subtitle": "We welcome your questions, proposals, and membership applications." }
+  },
+  "dialogue": {
+    "intro": {
+      "eyebrow": "National participation platform",
+      "title": "Youth voices at the National Dialogue table",
+      "text": "Kayan Misr takes part in National Dialogue sessions with trained youth delegations that carry young people's views and proposals to every track, and follows up on implementing the recommendations with the relevant bodies.",
+      "points": [
+        "Submitting youth proposals through well-researched working papers.",
+        "Holding preliminary listening sessions in the governorates before each round.",
+        "Tracking dialogue outcomes and measuring their real-world impact."
+      ]
+    },
+    "axesTitle": "Participation tracks",
+    "axesSubtitle": "We take part in all three tracks of the National Dialogue through specialized member committees.",
+    "axes": [
+      { "icon": "landmark", "title": "Political track", "text": "Political rights, the electoral system, local government, human rights, and public freedoms." },
+      { "icon": "trending", "title": "Economic track", "text": "Inflation and prices, private investment, industry and agriculture, and public debt." },
+      { "icon": "users", "title": "Social track", "text": "Education and health, culture and national identity, family and social cohesion, and youth." }
+    ],
+    "sessionsTitle": "Upcoming dialogue sessions",
+    "sessions": [
+      { "date": "2024/11/20", "place": "Cairo", "axis": "Political track", "title": "The Local Administration Law and youth participation in councils" },
+      { "date": "2024/11/27", "place": "Alexandria", "axis": "Economic track", "title": "Entrepreneurship and small business financing for youth" },
+      { "date": "2024/12/04", "place": "Assiut", "axis": "Social track", "title": "Linking technical education to labor market needs" }
+    ],
+    "register": "Register to take part",
+    "cta": {
+      "title": "Share your view in the National Dialogue",
+      "text": "Send your proposal or working paper, and the dialogue committee will review it and add it to Kayan's file.",
+      "button": "Submit your proposal"
+    }
+  },
+  "entertainment": {
+    "eyebrow": "Team spirit",
+    "title": "Recreation & social activities",
+    "subtitle": "Public work needs a close-knit team, so we organize regular recreational activities that bring members together from every governorate.",
+    "join": "Sign up",
+    "items": [
+      { "icon": "compass", "tag": "Trips", "title": "Cultural & sightseeing trips", "text": "Visits to historic sites, museums, and national projects to explore Egypt's past and present.", "date": "Monthly" },
+      { "icon": "trophy", "tag": "Sports", "title": "Kayan Misr Sports League", "text": "Football and team-sport tournaments between governorate teams, with a closing ceremony for the winners.", "date": "Annual season" },
+      { "icon": "palette", "tag": "Arts & culture", "title": "Arts & culture evenings", "text": "Poetry evenings and artistic and theatrical performances by talented members.", "date": "Every two weeks" },
+      { "icon": "tent", "tag": "Camps", "title": "Youth camps", "text": "Summer and winter camps that combine recreation with skills and leadership workshops.", "date": "Twice a year" },
+      { "icon": "gamepad", "tag": "Competitions", "title": "Competitions & challenges", "text": "Cultural and general-knowledge quizzes and online challenges with valuable prizes.", "date": "All year" },
+      { "icon": "handshake", "tag": "Networking", "title": "Meet-and-greet gatherings", "text": "Open social gatherings for new members to get to know Kayan and build connections.", "date": "Monthly" }
+    ]
+  },
+  "footer": {
+    "about": "A national intellectual and political institution that strengthens constitutional culture, enriches political science, and empowers young academic and legislative talent in service of the state and the New Republic.",
+    "badge": "An integrated Egyptian youth platform",
+    "columns": [
+      {
+        "title": "Specialized centers",
+        "links": ["Egyptian Constitution Encyclopedia", "Legislative & Parliamentary Observatory", "Public Policy Papers", "Egyptian Parliament Simulation", "Political Training Academy"]
+      },
+      {
+        "title": "Portal links",
+        "links": ["Home", "Political program & vision", "National Dialogue sessions", "Courses & cultural activities", "Students & office bodies"]
+      }
+    ],
+    "contactTitle": "Contact & institutional support",
+    "contactLines": ["Headquarters: Cairo, Egypt", "Unified contact center: 19000", "Email: info@kayanmisr.org"],
+    "rights": "All rights reserved to Kayan Misr Party",
+    "legal": ["Legal & publishing policy", "Academic privacy policy", "Party & youth work charter"]
+  }
+}

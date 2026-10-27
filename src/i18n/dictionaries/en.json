@@ -295,7 +295,7 @@
     "institute": { "title": "Political Science Institute", "subtitle": "Qualifying programs and professional certificates that prepare young leaders for public and parliamentary work." },
     "dialogue": { "title": "National Dialogue", "subtitle": "A space for youth to share their views and proposals on national issues within the National Dialogue." },
     "events": { "title": "Events", "subtitle": "Conferences, seminars, and consultative sessions organized by Kayan across all governorates." },
-    "entertainment": { "title": "Entertainment", "subtitle": "Recreational, sports, and cultural activities that bring members together and build team spirit." },
+    "entertainment": { "title": "Entertainment", "subtitle": "Theater, cinema, exhibitions, and interactive games that combine fun with political awareness." },
     "research": { "title": "Research & Studies", "subtitle": "Opinion pieces, policy papers, and strategic studies by leading researchers and members." },
     "contact": { "title": "Contact", "subtitle": "We welcome your questions, proposals, and membership applications." },
     "initiatives": { "title": "Manfaa", "subtitle": "Everyone has something to offer" },
@@ -488,17 +488,18 @@
     ]
   },
   "entertainment": {
-    "eyebrow": "Team spirit",
-    "title": "Recreation & social activities",
-    "subtitle": "Public work needs a close-knit team, so we organize regular recreational activities that bring members together from every governorate.",
+    "eyebrow": "Art in service of awareness",
+    "title": "Entertainment with a purpose",
+    "subtitle": "Theater, cinema, exhibitions, and interactive games that bring politics and the constitution closer to people through art and fun.",
     "join": "Sign up",
     "items": [
-      { "icon": "compass", "tag": "Trips", "title": "Cultural & sightseeing trips", "text": "Visits to historic sites, museums, and national projects to explore Egypt's past and present.", "date": "Monthly" },
-      { "icon": "trophy", "tag": "Sports", "title": "Kayan Misr Sports League", "text": "Football and team-sport tournaments between governorate teams, with a closing ceremony for the winners.", "date": "Annual season" },
-      { "icon": "palette", "tag": "Arts & culture", "title": "Arts & culture evenings", "text": "Poetry evenings and artistic and theatrical performances by talented members.", "date": "Every two weeks" },
-      { "icon": "tent", "tag": "Camps", "title": "Youth camps", "text": "Summer and winter camps that combine recreation with skills and leadership workshops.", "date": "Twice a year" },
-      { "icon": "gamepad", "tag": "Competitions", "title": "Competitions & challenges", "text": "Cultural and general-knowledge quizzes and online challenges with valuable prizes.", "date": "All year" },
-      { "icon": "handshake", "tag": "Networking", "title": "Meet-and-greet gatherings", "text": "Open social gatherings for new members to get to know Kayan and build connections.", "date": "Monthly" }
+      { "icon": "drama", "tag": "Theater", "title": "Political theater", "text": "Short performances about people's everyday issues, followed by an open discussion with the audience.", "date": "Monthly show" },
+      { "icon": "penTool", "tag": "Exhibitions", "title": "Annual political caricature exhibition", "text": "An art exhibition of political caricature tracing how it has evolved through the ages.", "date": "Annual exhibition" },
+      { "icon": "bookImage", "tag": "Exhibitions", "title": "Comics art exhibitions", "text": "Exhibitions of comics art and how it can be used in political education and to reach the new generation.", "date": "Annual exhibition" },
+      { "icon": "clapperboard", "tag": "Cinema", "title": "The party's cinema club", "text": "Screenings of Egyptian and international films about politics and society, followed by discussion.", "date": "Weekly screening" },
+      { "icon": "video", "tag": "Cinema", "title": "Documentary films", "text": "Documentary screenings that open windows onto history and public issues.", "date": "Every two weeks" },
+      { "icon": "monitorPlay", "tag": "Competitions", "title": "Motion graphics competitions", "text": "Motion graphics competitions aimed at public awareness and the public good.", "date": "Annual competition" },
+      { "icon": "puzzle", "tag": "Educational games", "title": "Educational games & constitutional escape rooms", "text": "Educational games that simulate elections and passing laws in parliament, plus constitutional escape rooms where teams solve puzzles based on constitutional articles to get out within 60 minutes.", "date": "All year" }
     ]
   },
   "footer": {

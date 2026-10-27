@@ -1,6 +1,9 @@
 import {
+  BookImage,
   Briefcase,
+  Clapperboard,
   Compass,
+  Drama,
   FileText,
   Eye,
   Gamepad2,
@@ -13,15 +16,19 @@ import {
   Mail,
   MapPin,
   Mic,
+  MonitorPlay,
   Newspaper,
   Palette,
+  PenTool,
   Phone,
+  Puzzle,
   Scale,
   Sparkles,
   Tent,
   TrendingUp,
   Trophy,
   Users,
+  Video,
   type LucideIcon,
 } from "lucide-react";
 
@@ -49,6 +56,13 @@ const icons: Record<string, LucideIcon> = {
   gavel: Gavel,
   briefcase: Briefcase,
   lightbulb: Lightbulb,
+  drama: Drama,
+  penTool: PenTool,
+  bookImage: BookImage,
+  clapperboard: Clapperboard,
+  video: Video,
+  monitorPlay: MonitorPlay,
+  puzzle: Puzzle,
 };
 
 export const getIcon = (key: string) => icons[key] ?? Sparkles;

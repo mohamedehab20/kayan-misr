@@ -14,6 +14,7 @@ const covers = [
   "from-[#2d4a1f] to-[#c98a2e]",
   "from-[#3b1f6b] to-[#c8102e]",
   "from-[#101b30] to-[#4a9fd8]",
+  "from-[#4a2c0f] to-[#3fa36b]",
 ];
 
 export function Entertainment({ lang, t }: { lang: Locale; t: Dictionary["entertainment"] }) {
@@ -24,9 +25,20 @@ export function Entertainment({ lang, t }: { lang: Locale; t: Dictionary["entert
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {t.items.map((item, i) => {
             const Icon = getIcon(item.icon);
+            // A lone card in the last row of the 3-column grid spans the full width instead
+            const wide = i === t.items.length - 1 && t.items.length % 3 === 1;
             return (
-              <article key={item.title} className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-line">
-                <div className={`relative grid aspect-[16/9] place-items-center bg-gradient-to-br ${covers[i % covers.length]}`}>
+              <article
+                key={item.title}
+                className={`flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-line ${
+                  wide ? "lg:col-span-3 lg:flex-row" : ""
+                }`}
+              >
+                <div
+                  className={`relative grid aspect-[16/9] place-items-center bg-gradient-to-br ${covers[i % covers.length]} ${
+                    wide ? "lg:aspect-auto lg:w-1/3 lg:shrink-0" : ""
+                  }`}
+                >
                   <Icon className="size-14 text-white/40" />
                   <span className="absolute end-4 top-4 rounded bg-white/90 px-2.5 py-1 text-xs font-bold text-navy">
                     {item.tag}

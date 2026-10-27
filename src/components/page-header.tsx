@@ -7,11 +7,13 @@ export function PageHeader({
   home,
   title,
   subtitle,
+  parent,
 }: {
   lang: Locale;
   home: string;
   title: string;
   subtitle: string;
+  parent?: { href: string; label: string };
 }) {
   return (
     <section className="relative overflow-hidden bg-navy py-16 text-white">
@@ -22,6 +24,14 @@ export function PageHeader({
             {home}
           </Link>
           <ChevronLeft className="size-4 ltr:rotate-180" />
+          {parent && (
+            <>
+              <Link href={parent.href} className="hover:text-white">
+                {parent.label}
+              </Link>
+              <ChevronLeft className="size-4 ltr:rotate-180" />
+            </>
+          )}
           <span className="text-gold-bright">{title}</span>
         </nav>
         <h1 className="mt-4 text-4xl font-extrabold sm:text-5xl">{title}</h1>

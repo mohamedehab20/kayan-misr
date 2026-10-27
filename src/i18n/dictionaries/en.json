@@ -15,6 +15,7 @@
     "items": [
       { "label": "Home", "href": "" },
       { "label": "About the Party", "href": "/about" },
+      { "label": "Our Initiatives", "href": "/initiatives" },
       { "label": "Constitutional Thought", "href": "/constitution" },
       { "label": "Political Science Institute", "href": "/institute" },
       { "label": "National Dialogue", "href": "/national-dialogue" },
@@ -297,6 +298,7 @@
     "entertainment": { "title": "Entertainment", "subtitle": "Recreational, sports, and cultural activities that bring members together and build team spirit." },
     "research": { "title": "Research & Studies", "subtitle": "Opinion pieces, policy papers, and strategic studies by leading researchers and members." },
     "contact": { "title": "Contact", "subtitle": "We welcome your questions, proposals, and membership applications." },
+    "initiatives": { "title": "Our Initiatives", "subtitle": "Community initiatives that turn members' time and expertise into a public service for every citizen." },
     "login": { "title": "Members Portal", "subtitle": "Sign in to follow your membership and requests." },
     "signup": { "title": "Create a member account", "subtitle": "Join Kayan Misr and follow your membership and requests in one place." },
     "account": { "title": "My account", "subtitle": "Your membership details and the requests you've sent." }
@@ -389,6 +391,101 @@
       "text": "Send your proposal or working paper, and the dialogue committee will review it and add it to Kayan's file.",
       "button": "Submit your proposal"
     }
+  },
+  "initiatives": {
+    "eyebrow": "Community service",
+    "title": "Four initiatives in service of citizens",
+    "subtitle": "Our members' time and skills are real wealth, so we designed initiatives that put them to work for those who need them.",
+    "labels": {
+      "idea": "The idea",
+      "value": "The value",
+      "challenge": "The challenge",
+      "more": "Initiative details",
+      "all": "All initiatives",
+      "contact": "Contact us about this initiative",
+      "others": "Other initiatives"
+    },
+    "items": [
+      {
+        "slug": "time-bank",
+        "icon": "hourglass",
+        "tag": "Exchange economy",
+        "title": "Time Bank",
+        "latin": "Time Bank",
+        "idea": "Every hour of service you give another member earns you an hour of credit, which you later spend on a service from a different member — no money changes hands.",
+        "listTitle": "A practical example",
+        "list": [
+          "An engineer spends an hour helping someone read an engineering drawing.",
+          "They earn one hour of credit.",
+          "They spend it on an hour of English lessons or tech support.",
+          "The platform records balances and keeps a log of every exchange."
+        ],
+        "tracks": [],
+        "tracksTitle": "",
+        "note": "",
+        "value": "Turning people's time and skills into a community resource, even for those who can't pay.",
+        "challenge": "Ensuring service quality, preventing fake accounts, and balancing the services requested with those offered."
+      },
+      {
+        "slug": "legal-clinic",
+        "icon": "gavel",
+        "tag": "Legal awareness & aid",
+        "title": "Legal Clinic",
+        "latin": "Legal Clinic",
+        "idea": "A platform that helps citizens understand official papers, find the right procedure and the competent authority, and use their right to appeal or file complaints.",
+        "listTitle": "How it works",
+        "list": [
+          "The citizen uploads the document or describes the problem.",
+          "They get a plain-language explanation of the terms and procedures.",
+          "They learn the competent authority, the required documents, and the legal deadlines.",
+          "They can request a review by a volunteer or specialist lawyer.",
+          "They get guidance on filing a complaint or appeal through official channels, such as the Unified Government Complaints System when it's the right body."
+        ],
+        "tracks": [],
+        "tracksTitle": "",
+        "note": "",
+        "value": "Narrowing the gap between citizens and their legal rights.",
+        "challenge": "Protecting documents and personal data, reviewing information legally, and never giving misleading automated answers or guaranteeing case outcomes."
+      },
+      {
+        "slug": "skills-bank",
+        "icon": "briefcase",
+        "tag": "Human capital",
+        "title": "Skills Bank",
+        "latin": "Skills Bank",
+        "idea": "An organized database of experienced professionals ready to give their time and knowledge to serve the community or institutions.",
+        "listTitle": "Example services",
+        "list": [
+          "An engineer gives an initial technical review of a community project.",
+          "An accountant helps an NGO organize its budget.",
+          "A marketing specialist helps a small business define its audience.",
+          "A doctor takes part in a health awareness activity."
+        ],
+        "tracks": [],
+        "tracksTitle": "",
+        "note": "The bank can run on hours, direct volunteering, or free consultations depending on each service.",
+        "value": "Putting existing expertise to use instead of leaving much of it untapped.",
+        "challenge": "Verifying qualifications, defining the scope of each consultation, and avoiding conflicts of interest."
+      },
+      {
+        "slug": "advisory",
+        "icon": "lightbulb",
+        "tag": "Public service & policy",
+        "title": "The Party's Advisory Arm",
+        "latin": "Advisory Arm",
+        "idea": "A network of experts and specialists offering free consultations to citizens, and helping study public problems and draft actionable proposals.",
+        "listTitle": "",
+        "list": [],
+        "tracks": [
+          { "title": "Serving citizens", "text": "Initial legal guidance, career advice, financial awareness, and help understanding government procedures." },
+          { "title": "Developing policy", "text": "Collecting recurring problems, analyzing their causes, and preparing practical recommendations for the relevant bodies." }
+        ],
+        "tracksTitle": "Two tracks",
+        "note": "",
+        "value": "Turning professional expertise into public service, and linking individual problems to institutional solutions.",
+        "challenge": ""
+      }
+    ]
   },
   "entertainment": {
     "eyebrow": "Team spirit",

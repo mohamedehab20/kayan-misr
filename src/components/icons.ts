@@ -1,11 +1,15 @@
 import {
+  Briefcase,
   Compass,
   FileText,
   Eye,
   Gamepad2,
+  Gavel,
   GraduationCap,
   Handshake,
+  Hourglass,
   Landmark,
+  Lightbulb,
   Mail,
   MapPin,
   Mic,
@@ -41,6 +45,10 @@ const icons: Record<string, LucideIcon> = {
   tent: Tent,
   gamepad: Gamepad2,
   handshake: Handshake,
+  hourglass: Hourglass,
+  gavel: Gavel,
+  briefcase: Briefcase,
+  lightbulb: Lightbulb,
 };
 
 export const getIcon = (key: string) => icons[key] ?? Sparkles;

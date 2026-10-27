@@ -1,5 +1,8 @@
+import Link from "next/link";
 import { ArrowLeft, Calendar, MapPin, Users } from "lucide-react";
+import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { requestHref } from "@/lib/links";
 import { SectionHeading } from "../section-heading";
 
 // Stand-in backgrounds until real event photos are added
@@ -9,7 +12,7 @@ const covers = [
   "from-[#0b1430] via-[#1f3b7a] to-[#c8102e]",
 ];
 
-export function Events({ t }: { t: Dictionary["home"]["events"] }) {
+export function Events({ lang, t }: { lang: Locale; t: Dictionary["home"]["events"] }) {
   return (
     <section id="events" className="bg-surface py-20">
       <div className="mx-auto max-w-7xl px-4">
@@ -47,8 +50,8 @@ export function Events({ t }: { t: Dictionary["home"]["events"] }) {
                 </p>
                 <h3 className="mt-3 text-lg font-bold leading-snug text-navy">{item.title}</h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{item.text}</p>
-                <a
-                  href="#"
+                <Link
+                  href={requestHref(lang, "event", item.title)}
                   className={`mt-6 rounded-lg py-3 text-center text-sm font-bold ${
                     item.primary
                       ? "bg-gold text-white hover:bg-gold/90"
@@ -56,7 +59,7 @@ export function Events({ t }: { t: Dictionary["home"]["events"] }) {
                   }`}
                 >
                   {item.cta}
-                </a>
+                </Link>
               </div>
             </article>
           ))}

@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { defaultLocale, hasLocale, locales } from "@/i18n/config";
+import { updateSession } from "@/lib/supabase/proxy";
 
 // Picks the first supported language from Accept-Language, e.g. "en-US,en;q=0.9" -> "en"
 function getLocale(request: NextRequest) {
@@ -11,18 +12,21 @@ function getLocale(request: NextRequest) {
   return defaultLocale;
 }
 
-export function proxy(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
   );
-  if (pathnameHasLocale) return;
 
-  request.nextUrl.pathname = `/${getLocale(request)}${pathname}`;
-  return NextResponse.redirect(request.nextUrl);
+  if (!pathnameHasLocale) {
+    request.nextUrl.pathname = `/${getLocale(request)}${pathname}`;
+    return NextResponse.redirect(request.nextUrl);
+  }
+
+  return updateSession(request);
 }
 
 export const config = {
-  // Skip Next.js internals and files with an extension (images, favicon, ...)
-  matcher: ["/((?!_next|api|.*\\..*).*)"],
+  // Skip Next.js internals, the auth callback, and files with an extension (images, favicon, ...)
+  matcher: ["/((?!_next|api|auth|.*\\..*).*)"],
 };

@@ -12,7 +12,7 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contact
   return (
     <>
       <PageHeader lang={lang} home={dict.nav.items[0].label} {...dict.pages.contact} />
-      <Contact t={dict.home.contact} />
+      <Contact lang={lang} t={dict.home.contact} />
       <Faq t={dict.home.faq} />
     </>
   );

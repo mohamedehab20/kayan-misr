@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Award, BookOpen } from "lucide-react";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { requestHref } from "@/lib/links";
 import { SectionHeading } from "../section-heading";
 
 export function Academy({ lang, t }: { lang: Locale; t: Dictionary["home"]["academy"] }) {
@@ -47,7 +48,7 @@ export function Academy({ lang, t }: { lang: Locale; t: Dictionary["home"]["acad
               </div>
 
               <Link
-                href={`/${lang}/contact`}
+                href={requestHref(lang, "academy", item.title)}
                 className="mt-5 rounded-lg bg-navy py-3 text-center text-sm font-bold text-white hover:bg-navy-soft"
               >
                 {t.apply}

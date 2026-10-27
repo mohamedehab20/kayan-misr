@@ -265,12 +265,26 @@
         "phone": "Mobile number",
         "phonePlaceholder": "01XXXXXXXXX",
         "type": "Inquiry type",
-        "types": ["Membership application", "Academy programs inquiry", "Legislative or research proposal", "Other"],
+        "types": [
+          { "value": "membership", "label": "Membership application" },
+          { "value": "academy", "label": "Academy program enrollment" },
+          { "value": "event", "label": "Event registration" },
+          { "value": "entertainment", "label": "Recreational activity sign-up" },
+          { "value": "dialogue", "label": "National Dialogue proposal or participation" },
+          { "value": "contact", "label": "General inquiry or other" }
+        ],
+        "topic": "Regarding",
         "message": "Message or proposal",
         "messagePlaceholder": "Write the details of your inquiry or proposal here...",
         "submit": "Send to the secretariat",
+        "sending": "Sending...",
         "privacy": "Your data is protected and encrypted",
-        "success": "Your message was received. The secretariat team will contact you soon."
+        "success": "Your message was received. The secretariat team will contact you soon.",
+        "errors": {
+          "invalid": "Please enter your name, email, and a message of at least 5 characters.",
+          "config": "Message delivery isn't enabled yet. Please try later or email us.",
+          "server": "Something went wrong while sending. Please try again."
+        }
       }
     }
   },
@@ -282,7 +296,48 @@
     "events": { "title": "Events", "subtitle": "Conferences, seminars, and consultative sessions organized by Kayan across all governorates." },
     "entertainment": { "title": "Entertainment", "subtitle": "Recreational, sports, and cultural activities that bring members together and build team spirit." },
     "research": { "title": "Research & Studies", "subtitle": "Opinion pieces, policy papers, and strategic studies by leading researchers and members." },
-    "contact": { "title": "Contact", "subtitle": "We welcome your questions, proposals, and membership applications." }
+    "contact": { "title": "Contact", "subtitle": "We welcome your questions, proposals, and membership applications." },
+    "login": { "title": "Members Portal", "subtitle": "Sign in to follow your membership and requests." },
+    "signup": { "title": "Create a member account", "subtitle": "Join Kayan Misr and follow your membership and requests in one place." },
+    "account": { "title": "My account", "subtitle": "Your membership details and the requests you've sent." }
+  },
+  "auth": {
+    "fullName": "Full name",
+    "email": "Email",
+    "phone": "Mobile number",
+    "governorate": "Governorate",
+    "password": "Password",
+    "passwordHint": "At least 8 characters",
+    "login": "Sign in",
+    "signup": "Create account",
+    "logout": "Sign out",
+    "loading": "Working...",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create one",
+    "haveAccount": "Already have an account?",
+    "goLogin": "Sign in",
+    "checkEmail": "Your account was created! We sent an activation link to your email. Open it, then sign in.",
+    "confirmFailed": "The activation link is invalid or expired. Sign in or create your account again.",
+    "errors": {
+      "invalid": "Please fill in all fields correctly.",
+      "credentials": "Incorrect email or password.",
+      "notConfirmed": "Your account isn't activated yet. Open the link we emailed you.",
+      "exists": "This email is already registered. Sign in instead.",
+      "weakPassword": "That password is too weak. Use at least 8 characters.",
+      "config": "The members portal isn't enabled yet.",
+      "server": "Something unexpected happened. Please try again."
+    },
+    "account": {
+      "welcome": "Welcome,",
+      "details": "Membership details",
+      "status": "Membership status",
+      "statuses": { "pending": "Under review", "active": "Active member", "rejected": "Rejected" },
+      "memberSince": "Member since",
+      "requests": "My requests",
+      "noRequests": "You haven't sent any requests yet.",
+      "newRequest": "Send a new request",
+      "requestStatuses": { "new": "New", "in_review": "In review", "done": "Answered" }
+    }
   },
   "dialogue": {
     "intro": {

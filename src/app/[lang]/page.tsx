@@ -23,10 +23,10 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
       <About t={home.about} />
       <Articles t={home.articles} />
       <Academy lang={lang} t={home.academy} />
-      <Events t={home.events} />
+      <Events lang={lang} t={home.events} />
       <Stats t={home.stats} />
       <Faq t={home.faq} />
-      <Contact t={home.contact} />
+      <Contact lang={lang} t={home.contact} />
     </>
   );
 }

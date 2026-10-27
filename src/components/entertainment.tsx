@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Clock } from "lucide-react";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { requestHref } from "@/lib/links";
 import { getIcon } from "./icons";
 import { SectionHeading } from "./section-heading";
 
@@ -40,7 +41,7 @@ export function Entertainment({ lang, t }: { lang: Locale; t: Dictionary["entert
                       {item.date}
                     </span>
                     <Link
-                      href={`/${lang}/contact`}
+                      href={requestHref(lang, "entertainment", item.title)}
                       className="rounded-lg bg-gold px-4 py-2.5 text-sm font-bold text-white hover:bg-gold/90"
                     >
                       {t.join}

@@ -1,24 +1,32 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
-import { CircleCheck, Send, ShieldCheck } from "lucide-react";
+import { useActionState, useEffect, useRef, useState } from "react";
+import { CircleAlert, CircleCheck, Send, ShieldCheck } from "lucide-react";
+import { submitRequest, type SubmitState } from "@/actions/submissions";
+import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { useQueryParam } from "@/lib/use-query-param";
 import { getIcon } from "../icons";
 import { SectionHeading } from "../section-heading";
 
 const fieldClass =
   "mt-2 w-full rounded-lg border border-transparent bg-surface px-4 py-3 text-sm outline-none transition placeholder:text-muted/60 focus:border-gold-bright focus:bg-white";
 
-export function Contact({ t }: { t: Dictionary["home"]["contact"] }) {
+export function Contact({ lang, t }: { lang: Locale; t: Dictionary["home"]["contact"] }) {
   const { form } = t;
-  const [sent, setSent] = useState(false);
+  const [state, action, pending] = useActionState<SubmitState, FormData>(submitRequest, { status: "idle" });
+  const formRef = useRef<HTMLFormElement>(null);
 
-  // Frontend only: no backend yet, so just confirm to the visitor
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setSent(true);
-    event.currentTarget.reset();
-  }
+  // Buttons elsewhere link here as /contact?type=academy&topic=..., so preselect what the visitor chose
+  const requested = useQueryParam("type");
+  const topic = useQueryParam("topic")?.slice(0, 200) ?? "";
+  const [chosen, setChosen] = useState<string | null>(null);
+  const type =
+    chosen ?? (form.types.some((option) => option.value === requested) ? requested! : form.types[0].value);
+
+  useEffect(() => {
+    if (state.status === "success") formRef.current?.reset();
+  }, [state]);
 
   return (
     <section id="contact" className="bg-surface py-20">
@@ -45,54 +53,75 @@ export function Contact({ t }: { t: Dictionary["home"]["contact"] }) {
           </ul>
         </div>
 
-        <form onSubmit={handleSubmit} className="rounded-2xl bg-white p-6 shadow-lg shadow-navy/5 sm:p-8">
+        <form ref={formRef} action={action} className="rounded-2xl bg-white p-6 shadow-lg shadow-navy/5 sm:p-8">
+          <input type="hidden" name="locale" value={lang} />
+          {/* Honeypot for spam bots, hidden from people and screen readers */}
+          <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden className="hidden" />
+
           <div className="grid gap-5 sm:grid-cols-2">
             <label className="text-sm font-semibold text-navy">
               {form.name}
-              <input name="name" required placeholder={form.namePlaceholder} className={fieldClass} />
+              <input name="name" required minLength={2} maxLength={120} placeholder={form.namePlaceholder} className={fieldClass} />
             </label>
             <label className="text-sm font-semibold text-navy">
               {form.email}
-              <input name="email" type="email" required placeholder={form.emailPlaceholder} className={fieldClass} />
+              <input name="email" type="email" required maxLength={200} placeholder={form.emailPlaceholder} className={fieldClass} />
             </label>
             <label className="text-sm font-semibold text-navy">
               {form.phone}
-              <input name="phone" type="tel" placeholder={form.phonePlaceholder} className={fieldClass} />
+              <input name="phone" type="tel" maxLength={30} placeholder={form.phonePlaceholder} className={fieldClass} />
             </label>
             <label className="text-sm font-semibold text-navy">
               {form.type}
-              <select name="type" className={fieldClass}>
-                {form.types.map((type) => (
-                  <option key={type}>{type}</option>
+              <select name="type" value={type} onChange={(event) => setChosen(event.target.value)} className={fieldClass}>
+                {form.types.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
                 ))}
               </select>
             </label>
+            {topic && (
+              <label className="text-sm font-semibold text-navy sm:col-span-2">
+                {form.topic}
+                <input name="topic" value={topic} readOnly className={`${fieldClass} text-gold`} />
+              </label>
+            )}
             <label className="text-sm font-semibold text-navy sm:col-span-2">
               {form.message}
               <textarea
                 name="message"
                 rows={5}
                 required
+                minLength={5}
+                maxLength={5000}
                 placeholder={form.messagePlaceholder}
                 className={fieldClass}
               />
             </label>
           </div>
 
-          {sent && (
+          {state.status === "success" && (
             <p className="mt-5 flex items-center gap-2 rounded-lg bg-green-50 p-3 text-sm font-semibold text-green-700" role="status">
-              <CircleCheck className="size-4" />
+              <CircleCheck className="size-4 shrink-0" />
               {form.success}
+            </p>
+          )}
+          {state.status === "error" && (
+            <p className="mt-5 flex items-center gap-2 rounded-lg bg-red-50 p-3 text-sm font-semibold text-red" role="alert">
+              <CircleAlert className="size-4 shrink-0" />
+              {form.errors[state.error]}
             </p>
           )}
 
           <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
             <button
               type="submit"
-              className="flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-bold text-white shadow-md shadow-gold/20 hover:bg-gold/90"
+              disabled={pending}
+              className="flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-bold text-white shadow-md shadow-gold/20 hover:bg-gold/90 disabled:opacity-60"
             >
               <Send className="size-4 rtl:-scale-x-100" />
-              {form.submit}
+              {pending ? form.sending : form.submit}
             </button>
             <span className="flex items-center gap-1.5 text-xs text-muted">
               <ShieldCheck className="size-4" />

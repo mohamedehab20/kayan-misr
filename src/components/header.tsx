@@ -46,14 +46,14 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
 
           <div className="flex items-center gap-2">
             <Link
-              href={`/${lang}/contact`}
+              href={`/${lang}/account`}
               className="hidden items-center gap-1.5 whitespace-nowrap rounded-lg bg-surface px-3 py-2.5 text-[13px] font-semibold text-navy hover:bg-surface-strong md:flex"
             >
               <LogIn className="size-4" />
               {dict.nav.members}
             </Link>
             <Link
-              href={`/${lang}/contact`}
+              href={`/${lang}/signup`}
               className="hidden items-center gap-1.5 whitespace-nowrap rounded-lg bg-gold px-4 py-2.5 text-[13px] font-bold text-white hover:bg-gold/90 sm:flex"
             >
               <UserPlus className="size-4" />
@@ -62,7 +62,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
             <MobileMenu
               links={links}
               label={dict.nav.openMenu}
-              join={{ href: `/${lang}/contact`, label: dict.nav.join }}
+              join={{ href: `/${lang}/signup`, label: dict.nav.join }}
               language={<LanguageSwitcher lang={lang} label={dict.nav.switchLanguage} />}
             />
           </div>

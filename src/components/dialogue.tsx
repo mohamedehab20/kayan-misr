@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowLeft, Calendar, CircleCheck, MapPin, MessagesSquare } from "lucide-react";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { requestHref } from "@/lib/links";
 import { getIcon } from "./icons";
 import { SectionHeading } from "./section-heading";
 
@@ -72,7 +73,7 @@ export function Dialogue({ lang, t }: { lang: Locale; t: Dictionary["dialogue"] 
                   </p>
                 </div>
                 <Link
-                  href={`/${lang}/contact`}
+                  href={requestHref(lang, "dialogue", session.title)}
                   className="rounded-lg bg-navy px-5 py-3 text-sm font-bold text-white hover:bg-navy-soft"
                 >
                   {t.register}
@@ -88,7 +89,7 @@ export function Dialogue({ lang, t }: { lang: Locale; t: Dictionary["dialogue"] 
           <h2 className="text-3xl font-extrabold">{t.cta.title}</h2>
           <p className="mx-auto mt-4 max-w-2xl text-white/70">{t.cta.text}</p>
           <Link
-            href={`/${lang}/contact`}
+            href={requestHref(lang, "dialogue")}
             className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-bold hover:bg-gold/90"
           >
             {t.cta.button}

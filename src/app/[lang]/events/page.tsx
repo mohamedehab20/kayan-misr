@@ -11,7 +11,7 @@ export default async function EventsPage({ params }: PageProps<"/[lang]/events">
   return (
     <>
       <PageHeader lang={lang} home={dict.nav.items[0].label} {...dict.pages.events} />
-      <Events t={dict.home.events} />
+      <Events lang={lang} t={dict.home.events} />
     </>
   );
 }

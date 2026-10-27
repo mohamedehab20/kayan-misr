@@ -47,10 +47,13 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           <div className="flex items-center gap-2">
             <Link
               href={`/${lang}/account`}
+              aria-label={dict.nav.members}
+              title={dict.nav.members}
               className="hidden items-center gap-1.5 whitespace-nowrap rounded-lg bg-surface px-3 py-2.5 text-[13px] font-semibold text-navy hover:bg-surface-strong md:flex"
             >
               <LogIn className="size-4" />
-              {dict.nav.members}
+              {/* Icon only while the full nav is squeezed (xl), label again once there is room */}
+              <span className="xl:hidden 2xl:inline">{dict.nav.members}</span>
             </Link>
             <Link
               href={`/${lang}/signup`}

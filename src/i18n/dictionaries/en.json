@@ -20,6 +20,7 @@
       { "label": "Political Science Institute", "href": "/institute" },
       { "label": "National Dialogue", "href": "/national-dialogue" },
       { "label": "Events", "href": "/events" },
+      { "label": "Political Life", "href": "/political-life" },
       { "label": "Entertainment", "href": "/entertainment" },
       { "label": "Research & Studies", "href": "/research" },
       { "label": "Contact", "href": "/contact" }
@@ -290,6 +291,7 @@
     }
   },
   "pages": {
+    "politicalLife": { "title": "Political Life", "subtitle": "A simple guide to Egypt's state institutions: the presidency, government, parties, civil society and governorates." },
     "about": { "title": "About the Party", "subtitle": "Learn about Kayan Misr's origins, vision, and the principles behind its national work." },
     "constitution": { "title": "Constitutional Thought", "subtitle": "A complete reference for understanding the Egyptian Constitution, legislation, and parliamentary analysis." },
     "institute": { "title": "Political Science Institute", "subtitle": "Qualifying programs and professional certificates that prepare young leaders for public and parliamentary work." },
@@ -501,6 +503,162 @@
       { "icon": "monitorPlay", "tag": "Competitions", "title": "Motion graphics competitions", "text": "Motion graphics competitions aimed at public awareness and the public good.", "date": "Annual competition" },
       { "icon": "puzzle", "tag": "Educational games", "title": "Educational games & constitutional escape rooms", "text": "Educational games that simulate elections and passing laws in parliament, plus constitutional escape rooms where teams solve puzzles based on constitutional articles to get out within 60 minutes.", "date": "All year" }
     ]
+  },
+  "politicalLife": {
+    "asOfLabel": "Data current as of",
+    "sourcesLabel": "Sources",
+    "disclaimer": "Office-holders change with every cabinet or governors reshuffle; check official sources before relying on any name.",
+    "tabs": {
+      "president": "President",
+      "government": "Government",
+      "ministryStructure": "Ministry structure",
+      "parties": "Parties",
+      "ngos": "Civil society",
+      "governors": "Governors",
+      "governorateStructure": "Governorate structure"
+    },
+    "president": {
+      "title": "President of the Republic",
+      "role": "Head of state and of the executive branch",
+      "since": "In office since"
+    },
+    "government": {
+      "title": "The Cabinet",
+      "subtitle": "The current government after the February 2026 reshuffle.",
+      "pm": "Prime Minister",
+      "minister": "Minister",
+      "deputies": "Deputy ministers",
+      "ministriesCount": "ministries"
+    },
+    "ministryStructure": {
+      "title": "How a ministry is organized",
+      "subtitle": "Egyptian ministries share a similar structure; the sectors and affiliated bodies differ from one ministry to another.",
+      "levels": [
+        {
+          "title": "The minister",
+          "text": "Sets and oversees the ministry's policy, accountable to the prime minister and the House."
+        },
+        {
+          "title": "Deputy ministers and the minister's office",
+          "text": "Deputies handle specific portfolios, supported by a technical office and advisers."
+        },
+        {
+          "title": "Sectors",
+          "text": "Each led by a sector head or first undersecretary, covering a main area of the ministry's work."
+        },
+        {
+          "title": "Central and general departments",
+          "text": "Executive units inside each sector, divided into general departments and departments."
+        },
+        {
+          "title": "Governorate directorates",
+          "text": "The ministry's executive arms in each governorate, working with the governor."
+        },
+        {
+          "title": "Affiliated bodies",
+          "text": "Public authorities, companies and research centres under the ministry, each with its own management."
+        }
+      ]
+    },
+    "parties": {
+      "title": "Parties in the House of Representatives",
+      "subtitle": "Seat distribution after the 2025 elections (results announced January 2026).",
+      "party": "Party",
+      "founded": "Founded",
+      "seats": "Seats",
+      "independents": "Independents",
+      "total": "Total seats",
+      "history": "About",
+      "chartLabel": "Seats per party out of 596"
+    },
+    "ngos": {
+      "title": "Civil society organizations",
+      "subtitle": "Civil work in Egypt is governed by Law No. 149 of 2019 on Regulating Civil Work and its executive regulations, supervised by the Ministry of Social Solidarity.",
+      "typesTitle": "Forms of civil work under the law",
+      "types": [
+        {
+          "title": "Associations",
+          "text": "An organized group of natural or legal persons pursuing a non-profit purpose."
+        },
+        {
+          "title": "Foundations",
+          "text": "Created by allocating funds to a non-profit purpose."
+        },
+        {
+          "title": "Sectoral and regional unions",
+          "text": "Bring together associations working in one field or one region."
+        },
+        {
+          "title": "General Union of NGOs",
+          "text": "The umbrella body for civil work nationwide."
+        },
+        {
+          "title": "Foreign NGOs",
+          "text": "Licensed to operate in Egypt under the law's conditions."
+        }
+      ],
+      "stepsTitle": "Setting up an association",
+      "steps": [
+        "Draft the bylaws and define the field of work and geographic scope.",
+        "Submit the notification and documents to the administrative body at the Ministry of Social Solidarity.",
+        "The association gains legal personality upon notification unless the authority objects within the legal period.",
+        "Open a bank account in the association's name and keep the required records and periodic reports."
+      ],
+      "rulesTitle": "Key rules",
+      "rules": [
+        "No partisan political activity or funding of parties or candidates.",
+        "Funds may only serve the association's purposes.",
+        "Foreign funding requires notifying the administrative body and following the law."
+      ],
+      "examplesTitle": "Examples of major organizations",
+      "examples": [
+        "Egyptian Food Bank",
+        "Misr El Kheir Foundation",
+        "Orman Association",
+        "Resala",
+        "Magdi Yacoub Heart Foundation",
+        "National Alliance for Civil Development Work"
+      ]
+    },
+    "governors": {
+      "title": "Governors",
+      "subtitle": "Governors of the 27 governorates after the 16 February 2026 reshuffle.",
+      "governor": "Governor",
+      "deputies": "Deputy governors",
+      "renewed": "Feb 2026 reshuffle",
+      "continued": "Continuing"
+    },
+    "governorateStructure": {
+      "title": "How a governorate is organized",
+      "subtitle": "Set by Local Administration Law No. 43 of 1979 and its amendments, the same in every governorate.",
+      "levels": [
+        {
+          "title": "The governor",
+          "text": "Represents the executive branch in the governorate, appointed by the president, and oversees public policy and utilities."
+        },
+        {
+          "title": "Deputy governor",
+          "text": "Assists the governor and handles delegated files."
+        },
+        {
+          "title": "Secretary-general and assistant",
+          "text": "Run the governorate's administrative apparatus and follow up on decisions."
+        },
+        {
+          "title": "Executive council",
+          "text": "The governor, deputies, heads of districts and cities, and directorate heads, following development plans and services."
+        },
+        {
+          "title": "Service directorates",
+          "text": "Ministry branches in the governorate: education, health, housing, agriculture, social solidarity and more."
+        },
+        {
+          "title": "Local units",
+          "text": "Districts (markaz), cities, neighbourhoods and villages, each with a head and a unit running daily services."
+        }
+      ],
+      "note": "The constitution (Article 180) provides for elected local councils; none have been elected since they were dissolved in 2011."
+    }
   },
   "footer": {
     "about": "A national intellectual and political institution that strengthens constitutional culture, enriches political science, and empowers young academic and legislative talent in service of the state and the New Republic.",

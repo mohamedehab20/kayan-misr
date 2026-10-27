@@ -22,7 +22,7 @@ export function NavLinks({ links }: { links: NavLink[] }) {
           key={link.href}
           href={link.href}
           aria-current={isActive(link.href, i) ? "page" : undefined}
-          className={`rounded-lg px-2.5 py-2 text-[13px] font-semibold transition-colors ${
+          className={`rounded-lg px-2 py-2 text-[13px] font-semibold transition-colors 2xl:px-2.5 ${
             isActive(link.href, i) ? "bg-surface-strong text-navy" : "text-muted hover:bg-surface hover:text-navy"
           }`}
         >
